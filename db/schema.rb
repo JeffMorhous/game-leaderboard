@@ -10,11 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_09_212905) do
+ActiveRecord::Schema.define(version: 2022_01_09_214912) do
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "username", null: false
+    t.integer "score", default: 0
   end
 
 end
