@@ -8,7 +8,7 @@ default: &default
   # cluster: flat-panda-2035.defaultdb
   # requiressl: true
   sslmode: 'allow'
-  sslrootcert: './root.crt'
+  # sslrootcert: './root.crt'
   options: "--cluster=flat-panda-2035"
 
 development:
