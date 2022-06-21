@@ -7,7 +7,7 @@ default: &default
   database: <%= Rails.application.credentials.dig(:cockroachdb, :database) %>
   # cluster: flat-panda-2035.defaultdb
   # requiressl: true
-  sslmode: 'allow'
+  sslmode: 'verify-full'
   # sslrootcert: './root.crt'
   options: "--cluster=flat-panda-2035"
 
